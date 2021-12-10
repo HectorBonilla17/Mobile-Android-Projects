@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidNotes</string>
+    <string name="android_notes">Android Notes</string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="_2021_hector_bonilla">\@2021, Hector Bonilla</string>
+    <string name="file_name">file_name</string>
+    <string name="saved">saved</string>
+    <string name="no_file">no_file</string>
+    <string name="date">Date</string>
+    <string name="notetext">NoteText</string>
+    <string name="notetitle">NoteTitle</string>
+</resources>
