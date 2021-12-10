@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/locationViewOfficial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#552255"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/no_data_for_location"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/youtubeView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:onClick="goToYoutube"
+            app:layout_constraintStart_toEndOf="@+id/twitterView"
+            app:layout_constraintTop_toBottomOf="@+id/websiteView"
+            app:srcCompat="@drawable/youtube"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/officeNameView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/officenameview"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/partyNameView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationViewOfficial" />
+
+        <TextView
+            android:id="@+id/officialNameView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/nameview"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/photoView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officeNameView" />
+
+        <TextView
+            android:id="@+id/partyNameView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/partynameview"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/photoView"
+            app:layout_constraintTop_toBottomOf="@+id/locationViewOfficial" />
+
+        <ImageView
+            android:id="@+id/photoView"
+            android:layout_width="210dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="goToPhotoActivity"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/officialNameView"
+            app:layout_constraintTop_toBottomOf="@+id/partyNameView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/missing"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/addressPointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/address"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/officialNameView" />
+
+        <TextView
+            android:id="@+id/addressView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/addresslink"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/photoView"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/addressPointer"
+            app:layout_constraintTop_toBottomOf="@+id/officialNameView" />
+
+        <TextView
+            android:id="@+id/phonePointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/phone"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressView" />
+
+        <TextView
+            android:id="@+id/phoneView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/phoneurl"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/photoView"
+            app:layout_constraintStart_toEndOf="@+id/phonePointer"
+            app:layout_constraintTop_toBottomOf="@+id/addressView" />
+
+        <TextView
+            android:id="@+id/emailPointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phonePointer" />
+
+        <TextView
+            android:id="@+id/emailView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/emailurl"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/photoView"
+            app:layout_constraintStart_toEndOf="@+id/emailPointer"
+            app:layout_constraintTop_toBottomOf="@+id/phoneView" />
+
+        <TextView
+            android:id="@+id/websitePointer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/website"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailPointer" />
+
+        <TextView
+            android:id="@+id/websiteView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/websiteurl"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/photoView"
+            app:layout_constraintStart_toEndOf="@+id/websitePointer"
+            app:layout_constraintTop_toBottomOf="@+id/emailView" />
+
+        <ImageView
+            android:id="@+id/partyIconView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/todo"
+            android:onClick="goToPartyWebsite"
+            app:layout_constraintBottom_toBottomOf="@+id/photoView"
+            app:layout_constraintEnd_toEndOf="@+id/photoView"
+            app:layout_constraintStart_toStartOf="@+id/photoView"
+            app:srcCompat="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/facebookView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="24dp"
+            android:onClick="goToFacebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/websiteView"
+            app:srcCompat="@drawable/facebook"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/twitterView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:onClick="goToTwitter"
+            app:layout_constraintStart_toEndOf="@+id/facebookView"
+            app:layout_constraintTop_toBottomOf="@+id/websiteView"
+            app:srcCompat="@drawable/twitter"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

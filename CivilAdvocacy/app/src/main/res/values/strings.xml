@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Civil Advocacy</string>
+    <string name="filler">filler</string>
+    <string name="official_name">official name</string>
+    <string name="partyname">partyName</string>
+    <string name="office_name">office name</string>
+    <string name="no_data_for_location">No Data For Location</string>
+    <string name="google_civic_information_api"><u>Google Civic Information API</u></string>
+    <string name="version_1_0">Version 1.0</string>
+    <string name="_2021_hector_bonilla">\@2021, Hector Bonilla</string>
+    <string name="data_provided_by">Data Provided By</string>
+    <string name="civil_advocacy">Civil Advocacy</string>
+    <string name="website">Website:</string>
+    <string name="email">Email:</string>
+    <string name="emailurl">emailUrl</string>
+    <string name="nameview">NameView</string>
+    <string name="address">Address:</string>
+    <string name="phone">Phone:</string>
+    <string name="websiteurl">websiteUrl</string>
+    <string name="phoneurl">phoneUrl</string>
+    <string name="addresslink">addressLink</string>
+    <string name="partynameview">PartyNameView</string>
+    <string name="todo">TODO</string>
+    <string name="officenameview">OfficeNameView</string>
+    <string name="namephoto">namePhoto</string>
+    <string name="officephoto">officePhoto</string>
+    <string name="textview">TextView</string>
+    <string name="textview2">TextView</string>
+</resources>
