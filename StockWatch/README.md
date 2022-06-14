@@ -10,3 +10,7 @@ If the stock symbol is recognized by the API it will import the data into the ap
 If the stock symbol is not recognized by the API it will throw an alert stating that data for the stock could not be found and no stock will be added to the user's list.
 
 ![Stock Fail](https://user-images.githubusercontent.com/31080342/173478724-085f4a92-3772-4763-9aae-37ffb41d5442.PNG)
+
+The user can also click on any stock displayed on their list and the app will redirect them to the MarketWatch page for the stock in the default browser.
+
+![Stock Click](https://user-images.githubusercontent.com/31080342/173479216-ca98f346-a587-4f28-a1ca-7035a2dad0a4.PNG)
